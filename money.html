@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScaleWise - Money Basics</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6fb;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    color: #1e3c72;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 80%;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💰 Money Basics</h1>
+
+<!-- ================= LESSON 1 ================= -->
+<div class="section">
+<h2>💡 Revenue vs Profit</h2>
+
+<p>
+Many people think revenue is profit — but this is wrong.
+</p>
+
+<p>
+Revenue = total money you earn  
+Profit = what you keep after expenses  
+</p>
+
+<p>
+Example:
+If you make R1000 but spend R700 → your profit is R300
+</p>
+
+<p>
+👉 Profit is what actually matters.
+</p>
+</div>
+
+<!-- ================= LESSON 2 ================= -->
+<div class="section">
+<h2>💸 Expenses</h2>
+
+<p>
+Expenses are the costs of running your business.
+</p>
+
+<p>
+Examples:
+• Rent  
+• Materials  
+• Advertising  
+• Transport  
+</p>
+
+<p>
+👉 If expenses are too high, profit disappears.
+</p>
+</div>
+
+<!-- ================= LESSON 3 ================= -->
+<div class="section">
+<h2>📊 Cash Flow</h2>
+
+<p>
+Cash flow is the movement of money in and out of your business.
+</p>
+
+<p>
+Good cash flow = money coming in regularly  
+Bad cash flow = running out of money  
+</p>
+
+<p>
+👉 Many businesses fail because of poor cash flow, not because they are bad ideas.
+</p>
+</div>
+
+<!-- ================= LESSON 4 ================= -->
+<div class="section">
+<h2>📈 Pricing</h2>
+
+<p>
+Pricing is one of the most important decisions.
+</p>
+
+<p>
+If your price is too low:
+• You make no profit  
+</p>
+
+<p>
+If your price is too high:
+• People won’t buy  
+</p>
+
+<p>
+👉 The best price balances value and affordability.
+</p>
+</div>
+
+<!-- ================= INTERACTIVE ================= -->
+<div class="section">
+<h2>🧠 Quick Calculator</h2>
+
+<p>Enter your revenue:</p>
+<input id="rev"><br>
+
+<p>Enter your expenses:</p>
+<input id="exp"><br>
+
+<button onclick="calc()">Calculate Profit</button>
+
+<p id="calcResult"></p>
+</div>
+
+<!-- ================= QUICK CHECK ================= -->
+<div class="section">
+<h2>🧠 Quick Check</h2>
+
+<p>1. What is profit?</p>
+<input id="q1"><br><br>
+
+<p>2. Name one expense</p>
+<input id="q2"><br><br>
+
+<p>3. What is cash flow?</p>
+<input id="q3"><br><br>
+
+<p>4. Why is pricing important?</p>
+<input id="q4"><br><br>
+
+<button onclick="checkAnswers()">Check</button>
+<p id="result"></p>
+</div>
+
+<!-- ================= NAV ================= -->
+<div class="section">
+<button onclick="goBack()">⬅ Back</button>
+<button onclick="goNext()">Next ➡</button>
+</div>
+
+<script>
+
+function goBack(){
+window.location.href = "growth.html";
+}
+
+function goNext(){
+window.location.href = "marketing.html";
+}
+
+function calc(){
+let revenue = document.getElementById("rev").value;
+let expenses = document.getElementById("exp").value;
+
+let profit = revenue - expenses;
+
+document.getElementById("calcResult").innerText =
+"Your profit is: R" + profit;
+}
+
+function checkAnswers(){
+let score = 0;
+
+if(q1.value.toLowerCase().includes("profit")) score++;
+if(q2.value!="") score++;
+if(q3.value.toLowerCase().includes("money")) score++;
+if(q4.value!="") score++;
+
+document.getElementById("result").innerText =
+"Score: " + score + "/4";
+}
+
+</script>
+
+</body>
+</html>

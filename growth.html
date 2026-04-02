@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScaleWise - Business Growth</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6fb;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    color: #1e3c72;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📊 Business Growth (Scaling)</h1>
+
+<!-- ================= LESSON 1 ================= -->
+<div class="section">
+<h2>🚀 Step 1: Focus on What Works</h2>
+
+<p>
+Not everything in your business will work equally well. Some things bring results, others waste time.
+</p>
+
+<p>
+Scaling starts by identifying what works best:
+• Which product sells most  
+• Which service people love  
+• Which marketing brings customers  
+</p>
+
+<p>
+👉 Do more of what works. Stop what doesn’t.
+</p>
+</div>
+
+<!-- ================= LESSON 2 ================= -->
+<div class="section">
+<h2>⚙️ Step 2: Build Systems</h2>
+
+<p>
+A system is a repeatable way of doing something.
+</p>
+
+<p>
+Example:
+Instead of manually replying to every customer, create a message template.
+</p>
+
+<p>
+Examples of systems:
+• Customer response templates  
+• Order processes  
+• Daily routines  
+</p>
+
+<p>
+👉 Systems save time and allow growth.
+</p>
+</div>
+
+<!-- ================= LESSON 3 ================= -->
+<div class="section">
+<h2>🤝 Step 3: Delegate & Hire</h2>
+
+<p>
+You cannot grow if you do everything yourself.
+</p>
+
+<p>
+Start small:
+• Ask someone to help  
+• Outsource simple tasks  
+</p>
+
+<p>
+Focus on what matters most:
+👉 Selling and improving your product
+</p>
+</div>
+
+<!-- ================= LESSON 4 ================= -->
+<div class="section">
+<h2>💸 Step 4: Increase Value (Not Just Price)</h2>
+
+<p>
+Many people think growth = raising prices.
+That is not always true.
+</p>
+
+<p>
+Better strategy:
+• Improve your service  
+• Add more value  
+• Make your offer stronger  
+</p>
+
+<p>
+👉 When value increases, people are happy to pay more.
+</p>
+</div>
+
+<!-- ================= LESSON 5 ================= -->
+<div class="section">
+<h2>📈 Step 5: Track Your Numbers</h2>
+
+<p>
+If you don’t track, you can’t grow.
+</p>
+
+<p>
+Important numbers:
+• Sales  
+• Expenses  
+• Profit  
+</p>
+
+<p>
+👉 Growth is based on data, not guessing.
+</p>
+</div>
+
+<!-- ================= QUICK CHECK ================= -->
+<div class="section">
+<h2>🧠 Quick Check</h2>
+
+<p>1. What should you focus on when scaling?</p>
+<input id="q1"><br><br>
+
+<p>2. What is a system?</p>
+<input id="q2"><br><br>
+
+<p>3. Why can’t you do everything yourself?</p>
+<input id="q3"><br><br>
+
+<p>4. What should you track?</p>
+<input id="q4"><br><br>
+
+<button onclick="checkAnswers()">Check</button>
+<p id="result"></p>
+</div>
+
+<!-- ================= NAV ================= -->
+<div class="section">
+<button onclick="goBack()">⬅ Back</button>
+<button onclick="goNext()">Next ➡</button>
+</div>
+
+<script>
+
+function goBack(){
+window.location.href = "start.html";
+}
+
+function goNext(){
+window.location.href = "money.html";
+}
+
+function checkAnswers(){
+let score = 0;
+
+if(q1.value.toLowerCase().includes("work")) score++;
+if(q2.value.toLowerCase().includes("repeat")) score++;
+if(q3.value!="") score++;
+if(q4.value.toLowerCase().includes("sales") || q4.value.toLowerCase().includes("profit")) score++;
+
+document.getElementById("result").innerText =
+"Score: " + score + "/4";
+}
+
+</script>
+
+</body>
+</html>

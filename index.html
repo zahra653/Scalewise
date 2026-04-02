@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScaleWise - Marketing</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6fb;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    color: #1e3c72;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 80%;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📣 Marketing</h1>
+
+<!-- ================= LESSON 1 ================= -->
+<div class="section">
+<h2>🎯 What is Marketing?</h2>
+
+<p>
+Marketing is how you attract customers to your business.
+</p>
+
+<p>
+It is not just advertising — it is about:
+• Getting attention  
+• Building trust  
+• Convincing people to buy  
+</p>
+
+<p>
+👉 Good marketing brings customers to YOU.
+</p>
+</div>
+
+<!-- ================= LESSON 2 ================= -->
+<div class="section">
+<h2>📱 Social Media Marketing</h2>
+
+<p>
+Today, social media is one of the most powerful tools.
+</p>
+
+<p>
+Platforms:
+• Instagram  
+• WhatsApp  
+• TikTok  
+</p>
+
+<p>
+Tips:
+• Post consistently  
+• Show your product  
+• Share results  
+</p>
+
+<p>
+👉 People buy what they see often.
+</p>
+</div>
+
+<!-- ================= LESSON 3 ================= -->
+<div class="section">
+<h2>⭐ Branding</h2>
+
+<p>
+Branding is how your business looks and feels.
+</p>
+
+<p>
+It includes:
+• Name  
+• Logo  
+• Colours  
+• Style  
+</p>
+
+<p>
+👉 Strong branding builds trust and makes you memorable.
+</p>
+</div>
+
+<!-- ================= LESSON 4 ================= -->
+<div class="section">
+<h2>💬 Selling</h2>
+
+<p>
+Selling is helping someone make a decision.
+</p>
+
+<p>
+Good selling:
+• Understands the customer  
+• Explains clearly  
+• Shows value  
+</p>
+
+<p>
+👉 People buy solutions, not products.
+</p>
+</div>
+
+<!-- ================= LESSON 5 ================= -->
+<div class="section">
+<h2>🔥 Consistency Wins</h2>
+
+<p>
+Many people fail because they stop too early.
+</p>
+
+<p>
+Marketing works over time:
+• Post regularly  
+• Improve content  
+• Keep showing up  
+</p>
+
+<p>
+👉 Consistency beats talent.
+</p>
+</div>
+
+<!-- ================= QUICK CHECK ================= -->
+<div class="section">
+<h2>🧠 Quick Check</h2>
+
+<p>1. What is marketing?</p>
+<input id="q1"><br><br>
+
+<p>2. Name one social media platform</p>
+<input id="q2"><br><br>
+
+<p>3. What is branding?</p>
+<input id="q3"><br><br>
+
+<p>4. Why is consistency important?</p>
+<input id="q4"><br><br>
+
+<button onclick="checkAnswers()">Check</button>
+<p id="result"></p>
+</div>
+
+<!-- ================= NAV ================= -->
+<div class="section">
+<button onclick="goBack()">⬅ Back</button>
+<button onclick="goHome()">🏠 Home</button>
+</div>
+
+<script>
+
+function goBack(){
+window.location.href = "money.html";
+}
+
+function goHome(){
+window.location.href = "index.html";
+}
+
+function checkAnswers(){
+let score = 0;
+
+if(q1.value.toLowerCase().includes("customer")) score++;
+if(q2.value!="") score++;
+if(q3.value.toLowerCase().includes("look") || q3.value.toLowerCase().includes("brand")) score++;
+if(q4.value!="") score++;
+
+document.getElementById("result").innerText =
+"Score: " + score + "/4";
+}
+
+</script>
+
+</body>
+</html>

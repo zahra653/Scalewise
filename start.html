@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScaleWise - Start a Business</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6fb;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    color: #1e3c72;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🚀 Start a Business</h1>
+
+<!-- ================= LESSON 1 ================= -->
+<div class="section">
+<h2>💡 Step 1: Find a Problem</h2>
+
+<p>
+Every successful business solves a problem. The bigger the problem, the bigger the opportunity.
+Instead of asking “What business should I start?”, ask:
+</p>
+
+<p><b>“What problem can I solve?”</b></p>
+
+<p>
+Examples:
+• People are busy → meal prep business  
+• Students struggle → tutoring  
+• Businesses need clients → marketing services  
+</p>
+
+<p>
+👉 The best businesses solve real problems for real people.
+</p>
+</div>
+
+<!-- ================= LESSON 2 ================= -->
+<div class="section">
+<h2>🎯 Step 2: Validate Your Idea</h2>
+
+<p>
+Before building anything, check if people actually want it.
+</p>
+
+<p>
+Ask:
+• Would someone pay for this?  
+• Who needs this most?  
+• Can I get 1 customer TODAY?  
+</p>
+
+<p>
+👉 Don’t build first. Sell first.
+</p>
+</div>
+
+<!-- ================= LESSON 3 ================= -->
+<div class="section">
+<h2>💰 Step 3: Get Your First Customer</h2>
+
+<p>
+Your first goal is NOT a website.  
+Your first goal is a customer.
+</p>
+
+<p>
+Start simple:
+• Ask friends/family  
+• Post on WhatsApp groups  
+• Offer a service  
+</p>
+
+<p>
+👉 One paying customer proves your idea works.
+</p>
+</div>
+
+<!-- ================= LESSON 4 ================= -->
+<div class="section">
+<h2>⚡ Step 4: Start Small & Improve</h2>
+
+<p>
+Don’t try to be perfect.
+Start small, then improve.
+</p>
+
+<p>
+• Learn from mistakes  
+• Adjust your offer  
+• Improve your service  
+</p>
+
+<p>
+👉 Progress beats perfection.
+</p>
+</div>
+
+<!-- ================= QUICK CHECK ================= -->
+<div class="section">
+<h2>🧠 Quick Check</h2>
+
+<p>1. What should a business solve?</p>
+<input id="q1"><br><br>
+
+<p>2. What should you get first?</p>
+<input id="q2"><br><br>
+
+<p>3. Why validate an idea?</p>
+<input id="q3"><br><br>
+
+<button onclick="checkAnswers()">Check</button>
+<p id="result"></p>
+</div>
+
+<!-- ================= NAV ================= -->
+<div class="section">
+<button onclick="goBack()">⬅ Back</button>
+<button onclick="goNext()">Next ➡</button>
+</div>
+
+<script>
+
+function goBack(){
+window.location.href = "business.html";
+}
+
+function goNext(){
+window.location.href = "growth.html";
+}
+
+function checkAnswers(){
+let score = 0;
+
+if(q1.value.toLowerCase().includes("problem")) score++;
+if(q2.value.toLowerCase().includes("customer")) score++;
+if(q3.value!="") score++;
+
+document.getElementById("result").innerText =
+"Score: " + score + "/3";
+}
+
+</script>
+
+</body>
+</html>
